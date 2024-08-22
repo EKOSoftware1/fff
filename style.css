@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+}
+
+/*.inner-header {
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}*/
+
+.banner {
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 40px;
+  float: left;
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+}
+
+.navigation a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 33px;
+  color: #00322e;
+}
+
+.navigation a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  font-size: 18px;
+}
+
+.navigation a:last-child {
+  padding-right: 100px;
+}
+
+.signup {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 25px;
+  border-width: 1px;
+  color: #00322e;
+  border-color: #00322e;
+  border-style: solid;
+}
+
+.login {
+  margin-right: 50px;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-top: 37px;
+  border-radius: 25px;
+  border-width: 1px;
+  background-color: #00322e;
+  color: white;
+}
+
+.container {
+  height: 600px;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.container img {
+  width: 100%;
+  height: 800px;
+}
+
+.hero-text {
+  width: 80%;
+}
+
+.hero-text h2 {
+  font-size: 3.3rem;
+  margin-bottom: 12px;
+  color: #00322e;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.lets-start {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 30px;
+  margin: 8px;
+  border-color: #00322e;
+  border-style: solid;
+  border-width: 1px;
+  color: #00322e;
+  font-weight: 800;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 848px) {
+  .container {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-text h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 678px) {
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  ul {
+    display: none;
+  }
+}
